@@ -1,44 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Styled Webpage</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- Header -->
-  <header id="header-section">
-    <h1 class="main-heading">Welcome to My Webpage</h1>
-    <p class="tagline">Learning CSS Step by Step</p>
-  </header>
+  <body>
+    <header class="header-section">
+      <div class="logo">
+        <img
+          src="https://static.tildacdn.pro/tild3764-6633-4663-b138-303730646233/aitu-logo__2.png"
+          alt="Logo"
+          class="logo-image"
+        />
+      </div>
 
-  <!-- Navigation -->
-  <nav id="navbar">
-    <a href="#" class="nav-link">Home</a>
-    <a href="#" class="nav-link">About</a>
-    <a href="#" class="nav-link">Gallery</a>
-    <a href="#" class="nav-link">Contact</a>
-  </nav>
+      <h2>My Web Page</h2>
 
-  <!-- Main Content -->
-  <section id="content-wrapper">
-    <h2 class="section-heading">About This Page</h2>
-    <p class="paragraph-text">
-      This page is styled with external CSS. It demonstrates basic selectors, typography, colors,
-      layout, and navigation styles.
-    </p>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#home"> Home </a></li>
+          <li><a href="#about"> About </a></li>
+          <li><a href="#contacts"> Contacts </a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="content-box">
-      <h3 class="section-heading">Sample Image</h3>
-      <img src= "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222184908/web-development1.png" alt="Example" class="featured-image">
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="https://i.ebayimg.com/images/g/B9UAAeSwJFFoX2W8/s-l1600.webp"
+          alt="Adventure Backpack"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Adventure Backpack</h3>
+          <p class="card-text">
+            Durable and spacious, this backpack is perfect for long hikes and
+            travel. Features multiple compartments and comfort padding.
+          </p>
+          <button class="card-button">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.ebayimg.com/images/g/Z~YAAOSwkpFkboJL/s-l1600.webp"
+          alt="Wireless Headphones"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Wireless Headphones</h3>
+          <p class="card-text">
+            Experience crystal-clear audio with 20 hours of battery life.
+            Lightweight design for all-day comfort and deep bass sound.
+          </p>
+          <button class="card-button">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.ebayimg.com/images/g/-FAAAOSwy7RltqYJ/s-l1600.webp"
+          alt="Vintage Camera"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Vintage Camera</h3>
+          <p class="card-text">
+            Capture timeless moments with this classic film camera. A
+            collector's item with modern functionality and rugged build quality.
+          </p>
+          <button class="card-button">Buy Now</button>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer id="footer-container">
-    <p class="paragraph-text">&copy; 2025 My Webpage</p>
-  </footer>
+    <div class="grid-container">
+        <header class="header">
+            <h1>Site Header</h1>
+            <p>This area often contains the logo and navigation.</p>
+        </header>
+        <aside class="sidebar">
+            <h2>Sidebar Navigation</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+        <main class="main">
+            <h2>Main Content Area</h2>
+            <p>This is where the primary information of the page resides. It's the largest and most important section.</p>
+            <p>We're using CSS Grid to make sure the header, sidebar, and footer stay in their correct places no matter the content length.</p>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 Grid Layout Example</p>
+        </footer>
+    </div>
 
-</body>
+  </body>
 </html>
