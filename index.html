@@ -1,173 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Responsive Tasks & Portfolio</title>
+  <head>
+    <title>5 assignment</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
 
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=36&h=36&fit=crop" alt="logo" class="me-2 rounded" />
-          <strong>MyPortfolio</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="container mt-4">
-
-    <section class="section">
-      <div class="task-card">
-        <h1>Task 0 — Responsive Typography</h1>
-        <p>This section demonstrates different font sizes via media queries. Resize the browser to see headings and paragraph text scale for mobile, tablet, and desktop breakpoints.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="task-card">
-        <h2>Task 1 — Three Boxes (CSS media queries)</h2>
-        <div class="three-boxes" id="boxes">
-          <div class="box">Box 1<br><small>Content</small></div>
-          <div class="box">Box 2<br><small>Content</small></div>
-          <div class="box">Box 3<br><small>Content</small></div>
-        </div>
-        <p class="mt-2"><em>Desktop:</em> three side-by-side — <em>Tablet:</em> two per row — <em>Mobile:</em> stacked.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="task-card">
-        <h2>Task 2 — Bootstrap Responsive Columns (12-column grid)</h2>
-        <p>Below uses Bootstrap's grid classes to achieve the required layout.</p>
-
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="p-3 bg-white rounded shadow-sm">Column A</div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="p-3 bg-white rounded shadow-sm">Column B</div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 mb-3">
-            <div class="p-3 bg-white rounded shadow-sm">Column C</div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="task-card">
-        <h2>Task 3 — Bootstrap Navigation Bar</h2>
-        <p>The navbar is placed at the top. Resize to see collapse into hamburger on smaller devices.</p>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="task-card">
-        <h2>Task 4 — Responsive Portfolio Page</h2>
-        <div class="row g-4">
-          <div class="col-12 col-md-7 col-lg-8">
-            <div class="row">
-              <div class="col-12 col-sm-6">
-                <div class="card project-card">
-                  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=300&fit=crop" class="card-img-top" alt="project">
-                  <div class="card-body">
-                    <h5 class="card-title">Project One</h5>
-                    <p class="card-text">Short description of project one.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">View</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="card project-card">
-                  <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=300&fit=crop" class="card-img-top" alt="project">
-                  <div class="card-body">
-                    <h5 class="card-title">Project Two</h5>
-                    <p class="card-text">Short description of project two.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">View</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="card project-card">
-                  <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=300&fit=crop" class="card-img-top" alt="project">
-                  <div class="card-body">
-                    <h5 class="card-title">Project Three</h5>
-                    <p class="card-text">Short description of project three.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">View</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6">
-                <div class="card project-card">
-                  <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=300&fit=crop" class="card-img-top" alt="project">
-                  <div class="card-body">
-                    <h5 class="card-title">Project Four</h5>
-                    <p class="card-text">Short description of project four.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">View</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <aside class="col-12 col-md-5 col-lg-4">
-            <div class="sidebar">
-              <h3 id="about">About Me</h3>
-              <p><strong>Yertugan Toktal</strong><br>Software Engineering student — AI/ML enthusiast.</p>
-
-              <div class="extra">
-                <h5>Contact</h5>
-                <p id="contact">Email: <a href="mailto:you@example.com">you@example.com</a><br>Phone: +7 (700) 000-0000</p>
-                <h6>Skills</h6>
-                <ul>
-                  <li>Python, JavaScript, C++, Java</li>
-                  <li>sklearn, PyTorch</li>
-                  <li>FastAPI, Bootstrap</li>
-                </ul>
-              </div>
-
-            </div>
-          </aside>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="text-center">
-    <div class="container">
-      <p class="mb-0">&copy; <span id="year"></span> MyPortfolio — responsive demo</p>
+  <body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <form>
+        <p>
+          <label for="name"> Name </label>
+          <input
+            type="text"
+            name="user_name"
+            id="name"
+            required
+            maxlength="50"
+            placeholder="Enter your name"
+          />
+        </p>
+        <p>
+          <label for="email"> Email </label>
+          <input type="email" name="user_email" id="email" placeholder="Enter your email"/>
+        </p>
+        <p>
+          <label for="message"> Message </label>
+          <textarea
+            id="message"
+            name="user_message"
+            required
+            minlength="10"
+            placeholder="Enter your message"
+          ></textarea>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
     </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+    <a href="index1.html" class="d-flex justify-content-center">Go to 2 part</a>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
