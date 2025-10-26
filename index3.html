@@ -14,13 +14,17 @@
   </head>
 
   <body>
-    <div id="colorBox" style="width: 200px; height: 100px; background-color: lightblue;"></div>
-    
-    <hr>
-    
-    <input type="text" id="textInput" placeholder="Type here...">
-    <div id="output"></div>
-    <a href="index3.html" class="d-flex align-items-center justify-content-center">Fourth Page</a>
-    <script src="third.js"></script>
+    <div class="container mt-5">
+        <h1 class="mb-4">Task Manager</h1>
+
+        <div class="input-group mb-3">
+            <input type="text" id="taskInput" class="form-control" placeholder="New task...">
+            <button class="btn btn-primary" id="addTaskBtn">Add Task</button>
+        </div>
+
+        <ul class="list-group" id="taskList">
+        </ul>
+    </div>
+    <script src="fourth.js"></script>
   </body>
 </html>
